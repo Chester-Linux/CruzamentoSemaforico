@@ -20,21 +20,19 @@ void setup() {
   PORTD |= (1<<PD2);
   PORTD |= (1<<PD3);
 
+  //Interrupções externas
   //Tipo de gatilho para interrupção - Borda de subida
   EICRA = 0b00001111;
-
   //Habilitando a interrupção dos pinos
   EIMSK = 0b00000011;
 
+  //Função Timers
   //Configurar TIMER2 no modo CTC
   TCCR2A = 0b00000010;
-
   //Prescale = 256 com t_COMP = 4ms
   TCCR2B = 0b00000110;
-
   //Habilita interrupção por comparação
   TIMSK2 = 0b00000010;
-
   //Carrega o valor TOP e limita  contagem
   OCR2A = 249;
 

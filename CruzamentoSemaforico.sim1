@@ -28,6 +28,8 @@
 
 <item itemtype="Led" CircId="Led-15" mainComp="false" Show_id="false" Show_Val="false" Pos="-260,136" rotation="-180" hflip="1" vflip="1" label="Led-15" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Red" Grounded="true" Threshold="1.8 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
 
+<item itemtype="SerialTerm" CircId="SerialTerm-23" mainComp="false" Show_id="false" Show_Val="false" Pos="84,-200" rotation="0" hflip="1" vflip="1" label="SerialTerm-23" idLabPos="-20,-32" labelrot="0" valLabPos="-16,20" valLabRot="0" Baudrate="9600 _Bd" DataBits="8 _bits" StopBits="1 _bits" SerialMon="false" />
+
 <item itemtype="Node" CircId="Node-16" mainComp="false" Pos="-244,-84" />
 
 <item itemtype="Node" CircId="Node-17" mainComp="false" Pos="-244,-88" />
@@ -87,5 +89,9 @@
 <item itemtype="Connector" uid="Connector-40" startpinid="Push-4-switch0pinN" endpinid="Node-20-0" pointList="-112,-88,-24,-88" />
 
 <item itemtype="Connector" uid="Connector-41" startpinid="Node-20-2" endpinid="Uno-1-2" pointList="-24,-88,-24,-80,24,-80" />
+
+<item itemtype="Connector" uid="Connector-45" startpinid="SerialTerm-23-pin1" endpinid="Uno-1-1" pointList="60,-192,-8,-192,-8,-88,24,-88" />
+
+<item itemtype="Connector" uid="Connector-46" startpinid="Uno-1-0" endpinid="SerialTerm-23-pin0" pointList="24,-96,4,-96,4,-208,60,-208" />
 
 </circuit>
